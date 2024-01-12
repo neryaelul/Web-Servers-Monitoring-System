@@ -260,8 +260,8 @@ php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
 ```
 
 
-<span style="color: blue;"> Don't forget to remove your Bylith.sql file in the main dir when you upload </span>
-
-
+**Don't forget to remove your Bylith.sql file in the main dir when you upload
+**
+Thanks you!
 
 
