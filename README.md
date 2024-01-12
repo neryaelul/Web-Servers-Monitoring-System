@@ -35,9 +35,8 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/webservers/get?q=HTTP Server
+{https//:yoururl.com}/api/v1.0/webservers/get/?q=HTTP Server
 ``` 
-
 
 ### Add
 
@@ -55,8 +54,6 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
     "type": "HTTPS"
 }
 ```
-
-
 
 ### Update
 
@@ -88,6 +85,68 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
     "name": "HTTP Server"
 }
 ```
+
+## History 
+### Get One with 10 Recently History log
+
+**Type** 
+``` GET ```
+**URL** 
+```
+{https//:yoururl.com}/api/v1.0/history/get/?q=name
+``` 
+
+
+
+## API Tokens
+### Get All
+
+**Type** 
+``` GET ```
+**URL** 
+```
+{https//:yoururl.com}/api/v1.0/tokens/get
+``` 
+
+### Get All Name
+
+**Type** 
+``` GET ```
+**URL** 
+```
+{https//:yoururl.com}/api/v1.0/tokens/get?q=HTTP Server
+``` 
+
+### Add
+
+**Type** 
+``` POST ```
+**URL** 
+```{https//:yoururl.com}/api/v1.0/tokens/add``` 
+
+**Body**
+```
+{
+    "name": "name-your-token",
+    "permission": 1
+}
+```
+
+
+### Delete
+**Type** 
+``` DELETE ```
+
+**URL** 
+```{https//:yoururl.com}/api/v1.0/tokens/delete``` 
+
+**Body**
+```
+{
+    "name": "HTTP Server"
+}
+```
+
 
 ## How to run it? 
 
