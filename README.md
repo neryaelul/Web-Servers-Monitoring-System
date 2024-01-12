@@ -260,9 +260,8 @@ php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
 ```
 
 
-`#f03c15`
-![#f03c15] text in red Don't forget to remove your Bylith.sql file in the main webserver dir when you upload 
-`#f03c15`
+<span style="color: blue;"> text in red Don't forget to remove your Bylith.sql file in the main webserver dir when you upload </span>
+
 
 
 
