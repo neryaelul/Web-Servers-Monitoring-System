@@ -25,14 +25,18 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 **Type** 
 ``` GET ```
 **URL** 
-```{https//:yoururl.com}/api/v1.0/webservers/get``` 
+```
+{https//:yoururl.com}/api/v1.0/webservers/get
+``` 
 
 ### Get One with 10 Recently History log
 
 **Type** 
 ``` GET ```
 **URL** 
-```{https//:yoururl.com}/api/v1.0/webservers/get?q=HTTP Server``` 
+```
+{https//:yoururl.com}/api/v1.0/webservers/get?q=HTTP Server
+``` 
 
 
 ### Add
@@ -70,6 +74,8 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
     "type": "HTTPS"
 }
 ```
+
+### Delete
 **Type** 
 ``` DELETE ```
 
