@@ -1,9 +1,15 @@
 # Bylith
-## About this project
-## Web Servers Monitoring System
-this is system build to give you the ability to monitoring the status of servers,
-you can use it for diffrent kind of servers like HTTP/S, SSH, FTP/S, and get the status by diffremt mathod, base on Latency, Status Code Response, SSH time out, FTP connetions and more!
-### You can get Email notification for a servers Unhealthy!
+
+## About this project - Web Servers Monitoring System
+this is a system built to give you the ability to monitor the status of servers,
+you can use it for different kinds of servers like HTTP/S, SSH, and FTP/S, and get the status by different methods, based on Latency, Status Code Response, SSH time out, and FTP connections, and you can get Email notifications for servers Unhealthy to your controller team!
 
 
-## You can easly using API, to Add, Get, Update and Delete your Webservers List, API Access tokens for more peoples, Emails notification list for your controler team
+## Using API
+### You can easily Add, Get, Update, and Delete:
+- Webservers List and History logs
+- API Access tokens for more people
+- Emails notification list for your control team
+
+
+## How to run it? 
