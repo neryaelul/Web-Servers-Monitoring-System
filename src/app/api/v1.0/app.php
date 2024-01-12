@@ -46,6 +46,8 @@
         
 
     }else{
+        $response['code'] = $app_settings['status']['validate_error']['code'];
+        $response['message'] = $app_settings['status']['validate_error']['message'];
         
     }
     echo json_encode($response);
