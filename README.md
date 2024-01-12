@@ -238,7 +238,7 @@ This is the tree of files:
         ├── functions.php
         └── settings.php
 
-
+```
 ### Config Database
 Go to your src/config/settings.php and edit this array index for your db:
  "database" => [
