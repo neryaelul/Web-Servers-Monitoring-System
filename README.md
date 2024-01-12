@@ -253,7 +253,7 @@ Go to your src/config/settings.php and edit this array index for your db:
 ```
 You can also edit the message API App error and more!
 
-For cron-jobs, AutomatedWorker App I use the shell script for my comment, 
+For cron-jobs, AutomatedWorker App I use the shell script for my commend, 
 In Aapanel just go to Cron -> Add Cron Job -> select shell script and run it every Minute
 ```
 php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
@@ -261,7 +261,7 @@ php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
 
 
 `#f03c15`
-Don't forgot to remove your Bylith.sql file in the main webserver dir when you upload 
+- text in red Don't forget to remove your Bylith.sql file in the main webserver dir when you upload 
 `#f03c15`
 
 
