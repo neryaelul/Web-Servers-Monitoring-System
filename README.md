@@ -10,6 +10,78 @@ you can use it for different kinds of servers like HTTP/S, SSH, and FTP/S, and g
 - Webservers List and History logs
 - API Access tokens for more people
 - Emails notification list for your control team
+  
+### API Reference
+Every request should have a **Token** and **Name** in the header:  Bylith-Name, Bylith-Token 
+```
+'Bylith-Name': 'nerya', 
+'Bylith-Token': '*********gfg', 
+```
 
+
+## Webserver
+### Get All
+
+**Type** 
+``` GET ```
+**URL** 
+```{https//:yoururl.com}/api/v1.0/webservers/get``` 
+
+### Get One with 10 Recently History log
+
+**Type** 
+``` GET ```
+**URL** 
+```{https//:yoururl.com}/api/v1.0/webservers/get?q=HTTP Server``` 
+
+
+### Add
+
+**Type** 
+``` POST ```
+**URL** 
+```{https//:yoururl.com}/api/v1.0/webservers/add``` 
+
+**Body**
+```
+{
+    "name": "HTTP Server",
+    "address": "example.com",
+    "disabled": false,
+    "type": "HTTPS"
+}
+```
+
+
+
+### Update
+
+**Type** 
+``` PUT ```
+**URL** 
+```{https//:yoururl.com}/api/v1.0/webservers/update``` 
+
+**Body**
+```
+{
+    "name": "HTTP Server",
+    "address": "example.com",
+    "disabled": false,
+    "type": "HTTPS"
+}
+```
+**Type** 
+``` DELETE ```
+
+**URL** 
+```{https//:yoururl.com}/api/v1.0/webservers/delete``` 
+
+**Body**
+```
+{
+    "name": "HTTP Server"
+}
+```
 
 ## How to run it? 
+
