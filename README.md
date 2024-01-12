@@ -87,19 +87,19 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ```
 
 ## History 
-### Get One with 10 Recently History log
 
 **Type** 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/history/get/?q=name
+{https//:yoururl.com}/api/v1.0/history/get/?q=name server
 ``` 
 
 
 
 ## API Tokens
-### Get All
+
+### Get All Names
 
 **Type** 
 ``` GET ```
@@ -108,16 +108,17 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 {https//:yoururl.com}/api/v1.0/tokens/get
 ``` 
 
-### Get All Name
+### Get All Names
 
 **Type** 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/tokens/get?q=HTTP Server
+{https//:yoururl.com}/api/v1.0/tokens/get
 ``` 
 
 ### Add
+### You can set permission (2 - Manege API Tokens, Manege Emails, Manege Webservers, Get History. 1 - Manege Webservers, Get History)
 
 **Type** 
 ``` POST ```
@@ -127,11 +128,10 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 **Body**
 ```
 {
-    "name": "name-your-token",
+    "name": "name-token",
     "permission": 1
 }
 ```
-
 
 ### Delete
 **Type** 
@@ -143,7 +143,58 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 **Body**
 ```
 {
-    "name": "HTTP Server"
+   "name": "name-token"
+}
+```
+
+
+
+## Email Notifications 
+
+### Get All 
+
+**Type** 
+``` GET ```
+**URL** 
+```
+{https//:yoururl.com}/api/v1.0/emails/get
+``` 
+
+### Get All Names
+
+**Type** 
+``` GET ```
+**URL** 
+```
+{https//:yoururl.com}/api/v1.0/emails/get
+``` 
+
+### Add
+
+**Type** 
+``` POST ```
+**URL** 
+```{https//:yoururl.com}/api/v1.0/emails/add``` 
+
+**Body**
+```
+{
+    "name": "name",
+    "email": "name@example.com"
+}
+```
+
+### Delete
+**Type** 
+``` DELETE ```
+
+**URL** 
+```{https//:yoururl.com}/api/v1.0/emails/delete``` 
+
+**Body**
+```
+{
+   "name": "name"
 }
 ```
 
