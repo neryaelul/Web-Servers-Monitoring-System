@@ -1,5 +1,5 @@
 <?php
-  //הגדרות וחיבורים ופונקציות בסיסיות
+  //הגדרות חיבורים ופונקציות בסיסיות
   require __DIR__ . '/src/config/settings.php';
   require __DIR__ . '/src/config/database.php';
   require __DIR__ . '/src/config/functions.php';
