@@ -1,0 +1,552 @@
+{
+	"info": {
+		"_postman_id": "7405c344-adc8-4e2e-8708-0036e3d9c1cc",
+		"name": "Bylith",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18250645"
+	},
+	"item": [
+		{
+			"name": "Tokens",
+			"item": [
+				{
+					"name": "Add new token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nerya2222\",\n    \"permission\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/tokens/add",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"tokens",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete token",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nerya2222\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/tokens/delete",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"tokens",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get tokens",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nerya2222\",\n    \"expired\": \"2024-12-01\",\n    \"can_expired\": 0,\n    \"permission\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/tokens/get",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"tokens",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emails notifications",
+			"item": [
+				{
+					"name": "Add new email",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nerya2222\",\n    \"email\": \"neryaelulweb@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/emails/add",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"emails",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete email",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"neryaelulweb@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/emails/delete",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"emails",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get emails",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"neryaelul@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/emails/get",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"emails",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Webservers",
+			"item": [
+				{
+					"name": "Add Webservers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"HTTP Test Server9\",\n    \"address\": \"4444444GF5.com\",\n    \"disabled\": false,\n    \"type\": \"HTTPS\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/webservers/add",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"webservers",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"nerya2222\",\n    \"expired\": \"2024-12-01\",\n    \"can_expired\": 0,\n    \"permission\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/webservers/get/",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"webservers",
+								"get",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "One Last 10 History by name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/webservers/get/?q=Bylith",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"webservers",
+								"get",
+								""
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Bylith"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Webservers",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"FTP Test Server 3\",\n    \"address\": \"51.16.39.136\",\n    \"disabled\": false,\n    \"type\": \"SSH\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/webservers/update",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"webservers",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Webservers",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"FTP Test Server 3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/webservers/delete",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"webservers",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "history",
+			"item": [
+				{
+					"name": "history",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Bylith-Name",
+								"value": "nerya",
+								"type": "text"
+							},
+							{
+								"key": "Bylith-Token",
+								"value": "neryanerya",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://bylith.nerya.services/api/v1.0/history/get/?q=Bylith",
+							"protocol": "https",
+							"host": [
+								"bylith",
+								"nerya",
+								"services"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"history",
+								"get",
+								""
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Bylith"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
