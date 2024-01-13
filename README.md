@@ -262,6 +262,8 @@ php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
 
 **Don't forget to remove your Bylith.sql file in the main dir when you upload
 **
+
+
 Thanks.
 
 
