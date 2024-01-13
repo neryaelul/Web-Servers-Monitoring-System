@@ -9,7 +9,13 @@ you can use it for different kinds of server protocols like HTTP/S, SSH, and FTP
 - Nginx 1.21.4 For your routes the apps 
 - PHP 7.4 Programming languages the system is based on
 - MySQL 5.7.43 for the DB
-
+  
+In Ngnix rewirte your url:
+```
+location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+ ```
 Can I recommend you use **Aapanel** open source panel management, for a website that is free and easy to use!
 
 You need to upload the files to your main website directory,
