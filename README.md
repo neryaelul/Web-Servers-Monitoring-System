@@ -13,8 +13,8 @@ you can use it for different kinds of server protocols like HTTP/S, SSH, and FTP
 In Ngnix rewirte your url:
 ```
 location / {
-        try_files $uri $uri/ /index.php?$query_string;
-    }
+    try_files $uri $uri/ /index.php?$query_string;
+}
  ```
 Can I recommend you use **Aapanel** open source panel management, for a website that is free and easy to use!
 
