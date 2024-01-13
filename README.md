@@ -71,6 +71,11 @@ In Aapanel just go to Cron -> Add Cron Job -> select shell script and run it eve
 ```
 php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
 ```
+Or in terminal linux
+```
+* * * * * php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
+```
+
 **Don't forget to remove your Bylith.sql file in the main dir when you upload**
 
 ## Using API
