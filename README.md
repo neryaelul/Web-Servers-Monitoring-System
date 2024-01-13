@@ -97,7 +97,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 {https//:yoururl.com}/api/v1.0/webservers/get/?q=HTTP Server
 ``` 
 
-### Add
+#### Add
 
 **Type** 
 ``` POST ```
@@ -114,7 +114,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 }
 ```
 
-### Update
+#### Update
 
 **Type** 
 ``` PUT ```
@@ -131,7 +131,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 }
 ```
 
-### Delete
+#### Delete
 **Type** 
 ``` DELETE ```
 
@@ -145,7 +145,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 }
 ```
 
-## History 
+### History 
 
 **Type** 
 ``` GET ```
@@ -156,9 +156,9 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 
 
 
-## API Tokens
+### API Tokens
 
-### Get All Names
+#### Get All Names
 
 **Type** 
 ``` GET ```
@@ -167,7 +167,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 {https//:yoururl.com}/api/v1.0/tokens/get
 ``` 
 
-### Get All Names
+#### Get All Names
 
 **Type** 
 ``` GET ```
