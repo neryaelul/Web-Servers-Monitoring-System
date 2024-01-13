@@ -10,7 +10,7 @@ you can use it for different kinds of server protocols like HTTP/S, SSH, and FTP
 - PHP 7.4 Programming languages the system is based on
 - MySQL 5.7.43 for the DB
 
-Can I recommend you use **Aapanel** is open source panel management, for a website that is free and easy to use!
+Can I recommend you use **Aapanel** open source panel management, for a website that is free and easy to use!
 
 You need to upload the files to your main website directory,
 This is the tree of files:
@@ -63,8 +63,7 @@ In Aapanel just go to Cron -> Add Cron Job -> select shell script and run it eve
 ```
 php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
 ```
-
-
+**Don't forget to remove your Bylith.sql file in the main dir when you upload**
 
 ## Using API
 ### You can easily Add, Get, Update, and Delete:
@@ -263,8 +262,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 
 
 
-**Don't forget to remove your Bylith.sql file in the main dir when you upload
-**
+
 
 
 Thanks.
