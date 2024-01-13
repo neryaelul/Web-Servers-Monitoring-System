@@ -9,14 +9,15 @@ you can use it for different kinds of server protocols like HTTP/S, SSH, and FTP
 - Nginx 1.21.4 For your routes the apps 
 - PHP 7.4 Programming languages the system is based on
 - MySQL 5.7.43 for the DB
-  
+
+Can I recommend you use **Aapanel** open source panel management, for a website that is free and easy to use!
 In Ngnix rewirte your url:
 ```
 location / {
     try_files $uri $uri/ /index.php?$query_string;
 }
  ```
-Can I recommend you use **Aapanel** open source panel management, for a website that is free and easy to use!
+
 
 You need to upload the files to your main website directory,
 This is the tree of files:
@@ -69,11 +70,11 @@ You can also edit the message API App error and more!
 For cron-jobs, AutomatedWorker App I use the shell script for my commend, 
 In Aapanel just go to Cron -> Add Cron Job -> select shell script and run it every Minute
 ```
-php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
+php /www/wwwroot/yoururl.com/index.php /AutomatedWorker/v1.0
 ```
 Or in terminal linux
 ```
-* * * * * php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
+* * * * * php /www/wwwroot/yoururl.com/index.php /AutomatedWorker/v1.0
 ```
 
 **Don't forget to remove your Bylith.sql file in the main dir when you upload**
@@ -99,7 +100,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/webservers/get
+https//:yoururl.com/api/v1.0/webservers/get
 ``` 
 
 ### Get One with 10 Recently History log
@@ -108,7 +109,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/webservers/get/?q=HTTP Server
+https//:yoururl.com/api/v1.0/webservers/get/?q=HTTP Server
 ``` 
 
 #### Add
@@ -116,7 +117,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 **Type** 
 ``` POST ```
 **URL** 
-```{https//:yoururl.com}/api/v1.0/webservers/add``` 
+```https//:yoururl.com/api/v1.0/webservers/add``` 
 
 **Body**
 ```
@@ -133,7 +134,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 **Type** 
 ``` PUT ```
 **URL** 
-```{https//:yoururl.com}/api/v1.0/webservers/update``` 
+```https//:yoururl.com/api/v1.0/webservers/update``` 
 
 **Body**
 ```
@@ -150,7 +151,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` DELETE ```
 
 **URL** 
-```{https//:yoururl.com}/api/v1.0/webservers/delete``` 
+```https//:yoururl.com/api/v1.0/webservers/delete``` 
 
 **Body**
 ```
@@ -165,7 +166,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/history/get/?q=name server
+https//:yoururl.com/api/v1.0/history/get/?q=name server
 ``` 
 
 
@@ -178,7 +179,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/tokens/get
+https//:yoururl.com/api/v1.0/tokens/get
 ``` 
 
 #### Get All Names
@@ -187,7 +188,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/tokens/get
+https//:yoururl.com/api/v1.0/tokens/get
 ``` 
 
 #### Add
@@ -198,7 +199,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 **Type** 
 ``` POST ```
 **URL** 
-```{https//:yoururl.com}/api/v1.0/tokens/add``` 
+```https//:yoururl.com/api/v1.0/tokens/add``` 
 
 **Body**
 ```
@@ -213,7 +214,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` DELETE ```
 
 **URL** 
-```{https//:yoururl.com}/api/v1.0/tokens/delete``` 
+```https//:yoururl.com/api/v1.0/tokens/delete``` 
 
 **Body**
 ```
@@ -232,7 +233,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/emails/get
+https//:yoururl.com/api/v1.0/emails/get
 ``` 
 
 #### Get All Names
@@ -241,7 +242,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-{https//:yoururl.com}/api/v1.0/emails/get
+https//:yoururl.com/api/v1.0/emails/get
 ``` 
 
 #### Add
@@ -249,7 +250,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 **Type** 
 ``` POST ```
 **URL** 
-```{https//:yoururl.com}/api/v1.0/emails/add``` 
+```https//:yoururl.com/api/v1.0/emails/add``` 
 
 **Body**
 ```
@@ -264,7 +265,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` DELETE ```
 
 **URL** 
-```{https//:yoururl.com}/api/v1.0/emails/delete``` 
+```https//:yoururl.com/api/v1.0/emails/delete``` 
 
 **Body**
 ```
