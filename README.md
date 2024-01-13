@@ -53,9 +53,9 @@ This is the tree of files:
 
 ### Config Database
 
-**Import backup/Bylith.sql to your database**
+1. Import backup/Bylith.sql to your database
 
-Go to your src/config/settings.php and edit this array index for your db:
+2. Go to your src/config/settings.php and edit this array index for your db:
 ```
  "database" => [
     "username" => "bylith",
