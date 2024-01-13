@@ -78,8 +78,8 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ```
 
 
-## Webserver
-### Get All
+### Webserver
+#### Get All
 
 **Type** 
 ``` GET ```
@@ -176,8 +176,10 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 {https//:yoururl.com}/api/v1.0/tokens/get
 ``` 
 
-### Add
-### You can set permission (2 - Manege API Tokens, Manege Emails, Manege Webservers, Get History. 1 - Manege Webservers, Get History)
+#### Add
+#### You can set permission: 
+ 1 - Manege Webservers, Get History
+ 2 - Manege API Tokens, Manege Emails, Manege Webservers,Get History.
 
 **Type** 
 ``` POST ```
@@ -192,7 +194,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 }
 ```
 
-### Delete
+#### Delete
 **Type** 
 ``` DELETE ```
 
@@ -208,18 +210,9 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 
 
 
-## Email Notifications 
+### Email Notifications 
 
-### Get All 
-
-**Type** 
-``` GET ```
-**URL** 
-```
-{https//:yoururl.com}/api/v1.0/emails/get
-``` 
-
-### Get All Names
+#### Get All 
 
 **Type** 
 ``` GET ```
@@ -228,7 +221,16 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 {https//:yoururl.com}/api/v1.0/emails/get
 ``` 
 
-### Add
+#### Get All Names
+
+**Type** 
+``` GET ```
+**URL** 
+```
+{https//:yoururl.com}/api/v1.0/emails/get
+``` 
+
+#### Add
 
 **Type** 
 ``` POST ```
@@ -243,7 +245,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 }
 ```
 
-### Delete
+#### Delete
 **Type** 
 ``` DELETE ```
 
