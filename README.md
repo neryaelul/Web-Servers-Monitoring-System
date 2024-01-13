@@ -49,11 +49,11 @@ This is the tree of files:
 Go to your src/config/settings.php and edit this array index for your db:
 ```
  "database" => [
-        "username" => "bylith",
-        "password" => "****",
-        "name" => "bylith",
-        "host" => "localhost"
-    ]
+    "username" => "bylith",
+    "password" => "****",
+    "name" => "bylith",
+    "host" => "localhost"
+]
 
 ```
 You can also edit the message API App error and more!
