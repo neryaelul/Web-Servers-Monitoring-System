@@ -2,7 +2,68 @@
 
 ## About this project 
 this is a system built to give you the ability to monitor the status of servers,
-you can use it for different kinds of servers protocols like HTTP/S, SSH, and FTP/S, and get the status by different methods, based on Latency, Status Code Response, SSH time out, and FTP connections, and you can get Email notifications for servers Unhealthy to your controller team!
+you can use it for different kinds of server protocols like HTTP/S, SSH, and FTP/S, and get the status by different methods, based on Latency, Status Code Response, SSH time out, and FTP connections, and you can get Email notifications for servers Unhealthy to your controller team!
+
+## How to run it? 
+### What did you need to run it?
+- Nginx 1.21.4 For your routes the apps 
+- PHP 7.4 Programming languages the system is based on
+- MySQL 5.7.43 for the DB
+
+Can I recommend you use **Aapanel** is open source panel management, for a website that is free and easy to use!
+
+You need to upload the files to your main website directory,
+This is the tree of files:
+```
+├── index.php
+└── src
+    ├── app
+    │   ├── AutomatedWorker
+    │   │   └── v1.0
+    │   │       ├── app.php
+    │   │       └── src
+    │   │           ├── class
+    │   │           │   ├── email_list_admins_send.php
+    │   │           │   └── server_check.php
+    │   │           └── email_lib
+    │   │               └── mail_smtp
+    │   │                   └── PHPMailer...
+    │   └── api
+    │       └── v1.0
+    │           ├── app.php
+    │           └── src
+    │               └── class
+    │                   ├── access.php
+    │                   ├── emails.php
+    │                   ├── history.php
+    │                   ├── tokens.php
+    │                   └── webservers.php
+    └── config
+        ├── database.php
+        ├── functions.php
+        └── settings.php
+
+```
+
+### Config Database
+Go to your src/config/settings.php and edit this array index for your db:
+```
+ "database" => [
+        "username" => "bylith",
+        "password" => "****",
+        "name" => "bylith",
+        "host" => "localhost"
+    ]
+
+```
+You can also edit the message API App error and more!
+
+For cron-jobs, AutomatedWorker App I use the shell script for my commend, 
+In Aapanel just go to Cron -> Add Cron Job -> select shell script and run it every Minute
+```
+php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
+```
+
 
 
 ## Using API
@@ -199,65 +260,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ```
 
 
-## How to run it? 
-### What did you need to run it?
-- Nginx 1.21.4 For your routes the apps 
-- PHP 7.4 Programming languages the system is based on
-- MySQL 5.7.43 for the DB
 
-Can I recommend you use **Aapanel** is open source panel management, for a website that is free and easy to use!
-
-You need to upload the files to your main website directory,
-This is the tree of files:
-```
-├── index.php
-└── src
-    ├── app
-    │   ├── AutomatedWorker
-    │   │   └── v1.0
-    │   │       ├── app.php
-    │   │       └── src
-    │   │           ├── class
-    │   │           │   ├── email_list_admins_send.php
-    │   │           │   └── server_check.php
-    │   │           └── email_lib
-    │   │               └── mail_smtp
-    │   │                   └── PHPMailer...
-    │   └── api
-    │       └── v1.0
-    │           ├── app.php
-    │           └── src
-    │               └── class
-    │                   ├── access.php
-    │                   ├── emails.php
-    │                   ├── history.php
-    │                   ├── tokens.php
-    │                   └── webservers.php
-    └── config
-        ├── database.php
-        ├── functions.php
-        └── settings.php
-
-```
-
-### Config Database
-Go to your src/config/settings.php and edit this array index for your db:
-```
- "database" => [
-        "username" => "bylith",
-        "password" => "****",
-        "name" => "bylith",
-        "host" => "localhost"
-    ]
-
-```
-You can also edit the message API App error and more!
-
-For cron-jobs, AutomatedWorker App I use the shell script for my commend, 
-In Aapanel just go to Cron -> Add Cron Job -> select shell script and run it every Minute
-```
-php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
-```
 
 
 **Don't forget to remove your Bylith.sql file in the main dir when you upload
