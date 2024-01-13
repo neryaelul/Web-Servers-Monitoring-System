@@ -100,7 +100,7 @@ Every request should have a **Token** and **Name** in the header:  Bylith-Name, 
 ``` GET ```
 **URL** 
 ```
-https//:yoururl.com/api/v1.0/webservers/get
+https://yoururl.com/api/v1.0/webservers/get
 ``` 
 
 ### Get One with 10 Recently History log
@@ -109,7 +109,7 @@ https//:yoururl.com/api/v1.0/webservers/get
 ``` GET ```
 **URL** 
 ```
-https//:yoururl.com/api/v1.0/webservers/get/?q=HTTP Server
+https://yoururl.com/api/v1.0/webservers/get/?q=HTTP Server
 ``` 
 
 #### Add
@@ -117,7 +117,7 @@ https//:yoururl.com/api/v1.0/webservers/get/?q=HTTP Server
 **Type** 
 ``` POST ```
 **URL** 
-```https//:yoururl.com/api/v1.0/webservers/add``` 
+```https://yoururl.com/api/v1.0/webservers/add``` 
 
 **Body**
 ```
@@ -134,7 +134,7 @@ https//:yoururl.com/api/v1.0/webservers/get/?q=HTTP Server
 **Type** 
 ``` PUT ```
 **URL** 
-```https//:yoururl.com/api/v1.0/webservers/update``` 
+```https://yoururl.com/api/v1.0/webservers/update``` 
 
 **Body**
 ```
@@ -151,7 +151,7 @@ https//:yoururl.com/api/v1.0/webservers/get/?q=HTTP Server
 ``` DELETE ```
 
 **URL** 
-```https//:yoururl.com/api/v1.0/webservers/delete``` 
+```https://yoururl.com/api/v1.0/webservers/delete``` 
 
 **Body**
 ```
@@ -166,7 +166,7 @@ https//:yoururl.com/api/v1.0/webservers/get/?q=HTTP Server
 ``` GET ```
 **URL** 
 ```
-https//:yoururl.com/api/v1.0/history/get/?q=name server
+https://yoururl.com/api/v1.0/history/get/?q=name server
 ``` 
 
 
@@ -179,7 +179,7 @@ https//:yoururl.com/api/v1.0/history/get/?q=name server
 ``` GET ```
 **URL** 
 ```
-https//:yoururl.com/api/v1.0/tokens/get
+https://yoururl.com/api/v1.0/tokens/get
 ``` 
 
 #### Get All Names
@@ -188,7 +188,7 @@ https//:yoururl.com/api/v1.0/tokens/get
 ``` GET ```
 **URL** 
 ```
-https//:yoururl.com/api/v1.0/tokens/get
+https://yoururl.com/api/v1.0/tokens/get
 ``` 
 
 #### Add
@@ -199,7 +199,7 @@ https//:yoururl.com/api/v1.0/tokens/get
 **Type** 
 ``` POST ```
 **URL** 
-```https//:yoururl.com/api/v1.0/tokens/add``` 
+```https://yoururl.com/api/v1.0/tokens/add``` 
 
 **Body**
 ```
@@ -214,7 +214,7 @@ https//:yoururl.com/api/v1.0/tokens/get
 ``` DELETE ```
 
 **URL** 
-```https//:yoururl.com/api/v1.0/tokens/delete``` 
+```https://yoururl.com/api/v1.0/tokens/delete``` 
 
 **Body**
 ```
@@ -233,7 +233,7 @@ https//:yoururl.com/api/v1.0/tokens/get
 ``` GET ```
 **URL** 
 ```
-https//:yoururl.com/api/v1.0/emails/get
+https://yoururl.com/api/v1.0/emails/get
 ``` 
 
 #### Get All Names
@@ -242,7 +242,7 @@ https//:yoururl.com/api/v1.0/emails/get
 ``` GET ```
 **URL** 
 ```
-https//:yoururl.com/api/v1.0/emails/get
+https://yoururl.com/api/v1.0/emails/get
 ``` 
 
 #### Add
@@ -250,7 +250,7 @@ https//:yoururl.com/api/v1.0/emails/get
 **Type** 
 ``` POST ```
 **URL** 
-```https//:yoururl.com/api/v1.0/emails/add``` 
+```https://yoururl.com/api/v1.0/emails/add``` 
 
 **Body**
 ```
@@ -265,7 +265,7 @@ https//:yoururl.com/api/v1.0/emails/get
 ``` DELETE ```
 
 **URL** 
-```https//:yoururl.com/api/v1.0/emails/delete``` 
+```https://yoururl.com/api/v1.0/emails/delete``` 
 
 **Body**
 ```
