@@ -54,7 +54,6 @@ Go to your src/config/settings.php and edit this array index for your db:
     "name" => "bylith",
     "host" => "localhost"
 ]
-
 ```
 You can also edit the message API App error and more!
 
@@ -71,7 +70,7 @@ php /www/wwwroot/bylith.nerya.services/index.php /AutomatedWorker/v1.0
 - API Access tokens for more people
 - Emails notification list for your control team
   
-### API Reference
+## API Reference
 Every request should have a **Token** and **Name** in the header:  Bylith-Name, Bylith-Token 
 ```
 'Bylith-Name': 'nerya', 
