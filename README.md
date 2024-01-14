@@ -11,6 +11,7 @@ you can use it for different kinds of server protocols like HTTP/S, SSH, and FTP
 - MySQL 5.7.43 for the DB
 
 Can I recommend you use **Aapanel** open source panel management, for a website that is free and easy to use!
+
 In Ngnix rewirte your url:
 ```
 location / {
@@ -228,15 +229,6 @@ https://yoururl.com/api/v1.0/tokens/get
 ### Email Notifications 
 
 #### Get All 
-
-**Type** 
-``` GET ```
-**URL** 
-```
-https://yoururl.com/api/v1.0/emails/get
-``` 
-
-#### Get All Names
 
 **Type** 
 ``` GET ```
