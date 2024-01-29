@@ -1,4 +1,4 @@
-# Bylith-  Web Servers Monitoring System
+# Web Servers Monitoring System
 
 ## About this project 
 this is a system built to give you the ability to monitor the status of servers,
